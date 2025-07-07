@@ -30,7 +30,7 @@ window.plugin.portalHighlighterVolatileScout = highlightVolatileScout;
 highlightVolatileScout.styles = {
   common: {
     fillOpacity: 1,
-    fillColor: 'hotpink'
+    fillColor: 'magenta'
   },
 };
 
