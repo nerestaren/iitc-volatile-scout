@@ -1,9 +1,16 @@
 // ==UserScript==
-// @author         Nerestaren
-// @name           Layer volatile scout portals
-// @category       Layer
-// @version        0.0.1
-// @description    Layer with portals that are not scouted and are volatiles
+// @author        Nerestaren
+// @id            layer-volatile-scout@Nerestaren
+// @name          Layer volatile scout portals
+// @category      Layer
+// @version       0.0.1
+// @description   Layer with portals that are not scouted and are volatiles
+// @namespace     https://github.com/IITC-CE/ingress-intel-total-conversion
+// @downloadURL   https://raw.githubusercontent.com/nerestaren/iitc-volatile-scout/main/layer-volatile-scout.user.js
+// @updateURL     https://raw.githubusercontent.com/nerestaren/iitc-volatile-scout/main/layer-volatile-scout.user.js
+// @include       https://intel.ingress.com/*
+// @match         https://intel.ingress.com/*
+// @grant         none
 // ==/UserScript==
 
 function wrapper(plugin_info) {
@@ -45,6 +52,7 @@ function removePortal(data) {
 function setup() {
   thisPlugin.layerGroup = new L.LayerGroup();
   window.addLayerGroup('Volatile scout, not scouted', thisPlugin.layerGroup, false);
+  window.layerChooser.addOverlay()
   window.addHook('portalAdded', addPortal);
   window.addHook('portalRemoved', removePortal);
 }

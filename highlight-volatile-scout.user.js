@@ -1,9 +1,16 @@
-// ==UserScript==
-// @author         Nerestaren
-// @name           Highlight volatile scout portals
-// @category       Highlighter
-// @version        0.0.1
-// @description    Highlight portals that are not scouted and are volatiles
+// // ==UserScript==
+// @author        Nerestaren
+// @id            highlight-volatile-scout@Nerestaren
+// @name          Highlight volatile scout portals
+// @category      Highlighter
+// @version       0.0.1
+// @description   Highlight portals that are not scouted and are volatiles
+// @namespace     https://github.com/IITC-CE/ingress-intel-total-conversion
+// @downloadURL   https://raw.githubusercontent.com/nerestaren/iitc-volatile-scout/main/highlight-volatile-scout.user.js
+// @updateURL     https://raw.githubusercontent.com/nerestaren/iitc-volatile-scout/main/highlight-volatile-scout.user.js
+// @include       https://intel.ingress.com/*
+// @match         https://intel.ingress.com/*
+// @grant         none
 // ==/UserScript==
 
 function wrapper(plugin_info) {
