@@ -52,7 +52,6 @@ function removePortal(data) {
 function setup() {
   thisPlugin.layerGroup = new L.LayerGroup();
   window.addLayerGroup('Volatile scout, not scouted', thisPlugin.layerGroup, false);
-  window.layerChooser.addOverlay()
   window.addHook('portalAdded', addPortal);
   window.addHook('portalRemoved', removePortal);
 }
